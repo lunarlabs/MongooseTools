@@ -12,7 +12,6 @@ func _enter_tree():
 	ed_interface = get_editor_interface()
 	ed_inspector = ed_interface.get_inspector()
 
-
 func _exit_tree():
 	ed_inspector = null
 	ed_interface = null
