@@ -1,17 +1,19 @@
 tool
 extends EditorPlugin
 
-var level_info_dock
+const MongooseLevel = preload("res://addons/mongooseTools/mongooseLevel.gd")
+const level_icon = preload("res://addons/mongooseTools/level.png")
+
+var ed_interface
+var ed_inspector
 
 func _enter_tree():
-	add_custom_type("MongooseLevel", "Spatial",\
-	 preload("res://addons/mongooseTools/mongooseLevel.gd"),\
-	 preload("res://addons/mongooseTools/level.png"))
-	#level_info_dock = preload("res://addons/mongooseTools/LevelEditor.tscn").instance()
-	#add_control_to_bottom_panel(level_info_dock, "Level Data")
+	add_custom_type("MongooseLevel", "Spatial", MongooseLevel, level_icon)
+	ed_interface = get_editor_interface()
+	ed_inspector = ed_interface.get_inspector()
 
 
 func _exit_tree():
-	#remove_control_from_bottom_panel(level_info_dock)
-	#level_info_dock.free()
+	ed_inspector = null
+	ed_interface = null
 	remove_custom_type("MongooseLevel")

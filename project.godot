@@ -8,24 +8,10 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Spatial",
-"class": "MongooseLevel",
-"language": "GDScript",
-"path": "res://addons/mongooseTools/mongooseLevel.gd"
-} ]
-_global_script_class_icons={
-"MongooseLevel": ""
-}
-
 [application]
 
 config/name="MongooseTools"
 config/icon="res://icon.png"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "res://addons/mongooseTools/plugin.cfg" )
 
 [gui]
 

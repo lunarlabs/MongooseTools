@@ -19,13 +19,13 @@ margin_right = 356.0
 margin_bottom = 586.0
 columns = 2
 
-[node name="Label" type="Label" parent="HSplitContainer/GridContainer"]
+[node name="lblName" type="Label" parent="HSplitContainer/GridContainer"]
 margin_top = 5.0
 margin_right = 49.0
 margin_bottom = 19.0
 text = "Name"
 
-[node name="LineEdit" type="LineEdit" parent="HSplitContainer/GridContainer"]
+[node name="ledName" type="LineEdit" parent="HSplitContainer/GridContainer"]
 margin_left = 53.0
 margin_right = 356.0
 margin_bottom = 24.0

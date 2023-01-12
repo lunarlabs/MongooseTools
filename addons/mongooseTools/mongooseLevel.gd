@@ -1,9 +1,14 @@
 tool
 extends Spatial
 
-class_name MongooseLevel
-
 export(String, FILE, "*.mmlvl") var level_metadata
+export(String) var level_name
+export(String) var level_subtitle
+export(String) var level_author
+export(String, FILE, "*.ogg") var level_music
+export(String, FILE, "*.mmlvl") var next_level
+export(String, FILE, "*.mmlvl") var secret_level
+export(String, FILE, "*.tscn") var bonus_stage
 
 func _enter_tree():
 	if not Engine.editor_hint:
