@@ -10,12 +10,12 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Spatial",
-"class": "MakinaMongooseLevel",
+"class": "MongooseLevel",
 "language": "GDScript",
-"path": "res://addons/mongooseTools/mongoose_level.gd"
+"path": "res://addons/mongooseTools/mongooseLevel.gd"
 } ]
 _global_script_class_icons={
-"MakinaMongooseLevel": ""
+"MongooseLevel": ""
 }
 
 [application]
