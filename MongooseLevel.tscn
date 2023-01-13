@@ -4,3 +4,4 @@
 
 [node name="MongooseLevel" type="Spatial"]
 script = ExtResource( 1 )
+level_metadata = "res://MongooseLevel.mmlvl"
